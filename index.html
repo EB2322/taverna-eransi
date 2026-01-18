@@ -36,48 +36,213 @@
   </div>
 </section>
 
-<section>
+<style>
+  .menu-section { max-width: 900px; margin: 0 auto; padding: 10px 0; }
+  .menu-section h2 { text-align:center; letter-spacing: .5px; margin: 10px 0 18px; }
+  .menu-section h3 { text-align:center; margin: 22px 0 10px; font-weight: 700; }
+  .menu-list { border-top: 1px solid rgba(0,0,0,.08); padding-top: 8px; }
+  .menu-item{
+    display:flex; justify-content:space-between; gap:16px;
+    padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,.06);
+    font-size: 15px;
+  }
+  .menu-item span:first-child{ flex:1; }
+  .price{ white-space:nowrap; font-weight:700; }
+  .note{ font-size: 13px; opacity:.75; text-align:center; margin: 6px 0 0; }
+</style>
+
+<section class="menu-section" id="menu">
   <h2>Menu / Menu</h2>
 
-  <h3>Peshku / Fish</h3>
-  <div class="menu-item"><span>Koran ne zgare / Grilled Koran (300g)</span><span class="price">1300 Lek</span></div>
-  <div class="menu-item"><span>Belushke ne zgare / Grilled Belushke (300g)</span><span class="price">900 Lek</span></div>
-  <div class="menu-item"><span>Trofte ne zgare / Grilled Trout (500g)</span><span class="price">700 Lek</span></div>
-  <div class="menu-item"><span>Tavë Korani / Koran Casserole (300g)</span><span class="price">1500 Lek</span></div>
-  <div class="menu-item"><span>Tavë Belushke / Belushke Casserole (300g)</span><span class="price">1200 Lek</span></div>
-  <div class="menu-item"><span>Tavë Trofte / Trout Casserole (500g)</span><span class="price">800 Lek</span></div>
+  <!-- SALLATA -->
+  <h3>Sallata / Salads</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Sallat fshati / Village salad</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Sallat mix / Mix salad</span><span class="price">450 L</span></div>
+    <div class="menu-item"><span>Sallat ulliri / Olives salad</span><span class="price">250 L</span></div>
+    <div class="menu-item"><span>Sallat jeshile / Green salad</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Sallat Cezar / Cezar salad</span><span class="price">500 L</span></div>
+    <div class="menu-item"><span>Sallat rukola / Arugula salad</span><span class="price">500 L</span></div>
+    <div class="menu-item"><span>Perime të pjekura</span><span class="price">400 L</span></div>
+  </div>
 
-  <h3>Supa / Soups</h3>
-  <div class="menu-item"><span>Supe Peshku / Fish Soup</span><span class="price">300 Lek</span></div>
-  <div class="menu-item"><span>Supe Pule / Chicken Soup</span><span class="price">250 Lek</span></div>
-  <div class="menu-item"><span>Supe Perime / Vegetable Soup</span><span class="price">250 Lek</span></div>
+  <!-- SHOQERUESE -->
+  <h3>Shoqëruese</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Xaxiq (Tzatziki)</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Salcë kosi (Sour cream)</span><span class="price">250 L</span></div>
+    <div class="menu-item"><span>Patate të skuqura (Fries)</span><span class="price">250 L</span></div>
+    <div class="menu-item"><span>Djath i bardhë (Feta cheese)</span><span class="price">250 L</span></div>
+    <div class="menu-item"><span>Kackavall i skuqur (Fried cheese)</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Djath furrë (Oven baked cheese)</span><span class="price">400 L</span></div>
+    <div class="menu-item"><span>Patate furrë (Baked potatoes)</span><span class="price">400 L</span></div>
+    <div class="menu-item"><span>Fërgesë në tavë balte</span><span class="price">400 L</span></div>
+    <div class="menu-item"><span>Speca me kackavall</span><span class="price">400 L</span></div>
+  </div>
 
+  <!-- SUPA -->
+  <h3>Supa / Soup</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Supe peshku / Fish soup</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Supe pule / Chicken soup</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Supe perime / Vegetable soup</span><span class="price">300 L</span></div>
+  </div>
+
+  <!-- PASTA -->
   <h3>Pasta</h3>
-  <div class="menu-item"><span>Linguini Fruta Deti / Seafood Linguini</span><span class="price">650 Lek</span></div>
-  <div class="menu-item"><span>Spaghetti Pane & Kërpudha</span><span class="price">500 Lek</span></div>
+  <div class="menu-list">
+    <div class="menu-item"><span>Linguini fruta deti / Linguini sea food</span><span class="price">700 L</span></div>
+    <div class="menu-item"><span>Spaghetti pana kërpudha</span><span class="price">500 L</span></div>
+    <div class="menu-item"><span>Makarona me gjalpë</span><span class="price">300 L</span></div>
+  </div>
 
+  <!-- RISOTTO -->
   <h3>Risotto</h3>
-  <div class="menu-item"><span>Risotto Fileto Pule Pane</span><span class="price">600 Lek</span></div>
-  <div class="menu-item"><span>Risotto Perime / Vegetable Risotto</span><span class="price">400 Lek</span></div>
-  <div class="menu-item"><span>Risotto Fruta Deti / Seafood Risotto</span><span class="price">700 Lek</span></div>
+  <div class="menu-list">
+    <div class="menu-item"><span>Risotto fileto pule pana</span><span class="price">700 L</span></div>
+    <div class="menu-item"><span>Risotto perime / Risotto with vegetables</span><span class="price">400 L</span></div>
+    <div class="menu-item"><span>Risotto fruta deti / Risotto with sea food</span><span class="price">700 L</span></div>
+  </div>
 
-  <h3>Mishi / Meat</h3>
-  <div class="menu-item"><span>Mish Qengji ne Furrë (400g)</span><span class="price">1000 Lek</span></div>
-  <div class="menu-item"><span>Brinjë Qengji ne Furrë (350g)</span><span class="price">800 Lek</span></div>
-  <div class="menu-item"><span>Brinjë Viçi ne Furrë (400g)</span><span class="price">1000 Lek</span></div>
-  <div class="menu-item"><span>Brinjë Viçi në Zgarë (350g)</span><span class="price">800 Lek</span></div>
-  <div class="menu-item"><span>Bërxollë Viçi (350g)</span><span class="price">800 Lek</span></div>
-  <div class="menu-item"><span>Biftek Viçi (300g)</span><span class="price">1000 Lek</span></div>
-  <div class="menu-item"><span>Fileto Pule (300g)</span><span class="price">500 Lek</span></div>
+  <!-- PESHK -->
+  <h3>Peshk / Fish</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Koran në zgarë / Grilled Koran (350 g)</span><span class="price">Sipas peshës</span></div>
+    <div class="menu-item"><span>Koran në zgarë / Grilled Koran (1 kg)</span><span class="price">Sipas peshës</span></div>
 
-  <h3>Tradicionale / Traditional</h3>
-  <div class="menu-item"><span>Pule Fshati e Tiganisur (2 pers)</span><span class="price">1500 Lek</span></div>
-  <div class="menu-item"><span>Pule Fshati e Tiganisur (4 pers)</span><span class="price">3000 Lek</span></div>
-  <div class="menu-item"><span>Pule Fshati me Bukë Misri (2 pers)</span><span class="price">1500 Lek</span></div>
-  <div class="menu-item"><span>Pule Fshati me Bukë Misri (4 pers)</span><span class="price">3000 Lek</span></div>
-  <div class="menu-item"><span>Pule Fshati me Jufka (2 pers)</span><span class="price">1500 Lek</span></div>
-  <div class="menu-item"><span>Pule Fshati me Jufka (4 pers)</span><span class="price">3000 Lek</span></div>
-  <div class="menu-item"><span>Lakror Tradicional Shqiptar</span><span class="price">1000 Lek</span></div>
+    <div class="menu-item"><span>Belushkë në zgarë / Grilled Belushkë (350 g)</span><span class="price">Sipas peshës</span></div>
+    <div class="menu-item"><span>Belushkë në zgarë / Grilled Belushkë (1 kg)</span><span class="price">Sipas peshës</span></div>
+
+    <div class="menu-item"><span>Troftë në zgarë / Grilled trout (500 g)</span><span class="price">800 L</span></div>
+    <div class="menu-item"><span>Troftë në zgarë / Grilled trout (1 kg)</span><span class="price">1500 L</span></div>
+
+    <div class="menu-item"><span>Levrek në zgarë / Grilled levrek (500 g)</span><span class="price">1200 L</span></div>
+    <div class="menu-item"><span>Kocë në zgarë / Grilled koce (500 g)</span><span class="price">1200 L</span></div>
+
+    <div class="menu-item"><span>Tavë korani / Koran casserole (1 kg)</span><span class="price">Sipas peshës</span></div>
+    <div class="menu-item"><span>Tavë belushkë / Belushkë casserole (1 kg)</span><span class="price">Sipas peshës</span></div>
+    <div class="menu-item"><span>Tavë trofte / Trout casserole (1 kg)</span><span class="price">1800 L</span></div>
+  </div>
+  <p class="note">* “Sipas peshës” = çmimi varet nga pesha (kg).</p>
+
+  <!-- MISH -->
+  <h3>Mish / Meat</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Biftek viçi / Beef steak (350 g)</span><span class="price">1100 L</span></div>
+    <div class="menu-item"><span>Biftek viçi / Beef steak (1 kg)</span><span class="price">2400 L</span></div>
+
+    <div class="menu-item"><span>Bërxollë viçi / Veal chops (350 g)</span><span class="price">1100 L</span></div>
+    <div class="menu-item"><span>Bërxollë viçi / Veal chops (1 kg)</span><span class="price">2400 L</span></div>
+
+    <div class="menu-item"><span>Brinjë viçi në zgarë / Grilled veal ribs (350 g)</span><span class="price">1100 L</span></div>
+    <div class="menu-item"><span>Brinjë viçi në zgarë / Grilled veal ribs (1 kg)</span><span class="price">2400 L</span></div>
+
+    <div class="menu-item"><span>Fileto pule në zgarë / Grilled chicken fillet (400 g)</span><span class="price">700 L</span></div>
+    <div class="menu-item"><span>Fileto pule në zgarë / Grilled chicken fillet (1 kg)</span><span class="price">1200 L</span></div>
+
+    <div class="menu-item"><span>Mix mishi / Mixed meats</span><span class="price">2500 / 3500 / 5000 L</span></div>
+
+    <div class="menu-item"><span>Shpretkë e mbushur (350 g)</span><span class="price">800 L</span></div>
+    <div class="menu-item"><span>Shpretkë e mbushur në tavë balte (350 g)</span><span class="price">800 L</span></div>
+    <div class="menu-item"><span>Shpretkë e mbushur në tavë balte (2 persona)</span><span class="price">1500 L</span></div>
+
+    <div class="menu-item"><span>Pule e tiganisur (2 persona)</span><span class="price">1300 L</span></div>
+    <div class="menu-item"><span>Pule e tiganisur (4 persona)</span><span class="price">2500 L</span></div>
+
+    <div class="menu-item"><span>Pule me bukë misri (2 persona)</span><span class="price">1300 L</span></div>
+    <div class="menu-item"><span>Pule me bukë misri (4 persona)</span><span class="price">2500 L</span></div>
+
+    <div class="menu-item"><span>Pule me jufka &amp; petka (2 persona)</span><span class="price">1300 L</span></div>
+    <div class="menu-item"><span>Pule me jufka &amp; petka (4 persona)</span><span class="price">2500 L</span></div>
+
+    <div class="menu-item"><span>Lakror tradicional / Traditional pie</span><span class="price">1500 L</span></div>
+  </div>
+
+  <!-- PIJE -->
+  <h3>Pije të ngrohta</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Ekspres</span><span class="price">90 L</span></div>
+    <div class="menu-item"><span>Makiato</span><span class="price">90 L</span></div>
+    <div class="menu-item"><span>Americano</span><span class="price">110 L</span></div>
+    <div class="menu-item"><span>Kapucino</span><span class="price">110 L</span></div>
+    <div class="menu-item"><span>Çokollatë e ngrohtë</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Kakao</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Salep</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Çaj</span><span class="price">80 L</span></div>
+  </div>
+
+  <h3>Pije të ftohta</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Ujë i vogël</span><span class="price">50 L</span></div>
+    <div class="menu-item"><span>Ujë i madh</span><span class="price">150 L</span></div>
+    <div class="menu-item"><span>Ujë me gas</span><span class="price">80 L</span></div>
+    <div class="menu-item"><span>Ujë vitamin</span><span class="price">90 L</span></div>
+    <div class="menu-item"><span>Coca Cola</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Fanta</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Bravo</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Çaj i ftohtë</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Soda</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Frutomania</span><span class="price">170 L</span></div>
+    <div class="menu-item"><span>Schweppes</span><span class="price">120 L</span></div>
+    <div class="menu-item"><span>Redbull</span><span class="price">250 L</span></div>
+  </div>
+
+  <!-- BIRRA -->
+  <h3>Birrat</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Budweiser i vogël</span><span class="price">200 L</span></div>
+    <div class="menu-item"><span>Budweiser i madh</span><span class="price">250 L</span></div>
+    <div class="menu-item"><span>Erdinger (Helles, Kristal, i turbull)</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Korça</span><span class="price">200 L</span></div>
+    <div class="menu-item"><span>Stella Artois</span><span class="price">200 L</span></div>
+    <div class="menu-item"><span>Peroni</span><span class="price">200 L</span></div>
+    <div class="menu-item"><span>Bavaria 0.0% ALC</span><span class="price">200 L</span></div>
+  </div>
+
+  <!-- ALKOOLIKE -->
+  <h3>Alkoolike</h3>
+  <div class="menu-list">
+    <div class="menu-item"><span>Chivas Regal 12</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Jack Daniels</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Red Label</span><span class="price">300 L</span></div>
+
+    <div class="menu-item"><span>Gin Gordon’s</span><span class="price">250 L</span></div>
+    <div class="menu-item"><span>Gin Tanqueray</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Gin Bombay</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Gin Hendrick’s</span><span class="price">350 L</span></div>
+
+    <div class="menu-item"><span>Disaronno</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Johnny Walker (Black/Red)</span><span class="price">350 L</span></div>
+
+    <div class="menu-item"><span>J&amp;B</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Glenfiddich</span><span class="price">450 L</span></div>
+    <div class="menu-item"><span>Ballantine’s</span><span class="price">450 L</span></div>
+
+    <div class="menu-item"><span>Vodka Absolut</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Vodka Finlandia</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Puschkin</span><span class="price">250 L</span></div>
+
+    <div class="menu-item"><span>Grey Goose</span><span class="price">500 L</span></div>
+    <div class="menu-item"><span>Belvedere</span><span class="price">600 L</span></div>
+
+    <div class="menu-item"><span>Metaxa 5</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Metaxa 7</span><span class="price">400 L</span></div>
+    <div class="menu-item"><span>Metaxa 12</span><span class="price">550 L</span></div>
+
+    <div class="menu-item"><span>Hennessy</span><span class="price">600 L</span></div>
+    <div class="menu-item"><span>Diplomatico</span><span class="price">1200 L</span></div>
+    <div class="menu-item"><span>Bacardi</span><span class="price">450 L</span></div>
+
+    <div class="menu-item"><span>Tequila</span><span class="price">250 L</span></div>
+    <div class="menu-item"><span>Martini</span><span class="price">300 L</span></div>
+
+    <div class="menu-item"><span>Amaro Montenegro</span><span class="price">300 L</span></div>
+    <div class="menu-item"><span>Amaro del Capo</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Campari</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Aperol</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Malibu</span><span class="price">350 L</span></div>
+    <div class="menu-item"><span>Fernet Branca</span><span class="price">350 L</span></div>
+  </div>
 </section>
 
 <section>
