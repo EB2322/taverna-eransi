@@ -5,41 +5,110 @@
   <title>Taverna Eransi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { margin:0; font-family:Arial; background:#f5f5f5; }
-    header { background:#111; color:#fff; padding:20px; text-align:center; }
-    section { padding:20px; max-width:1100px; margin:auto; }
-    h2 { border-bottom:2px solid #c59d5f; padding-bottom:5px; }
-    .gallery img { width:100%; max-width:350px; margin:10px; border-radius:8px; }
-    .gallery { display:flex; flex-wrap:wrap; justify-content:center; }
-    .btn { background:#25D366; color:#fff; padding:15px; text-decoration:none; border-radius:6px; display:inline-block; margin-top:15px; }
-    footer { background:#111; color:#fff; text-align:center; padding:15px; }
+    body {margin:0;font-family:Arial,sans-serif;background:#faf5ed;color:#333;}
+    header{background:#3b2f2f;color:white;padding:25px;text-align:center;}
+    section{padding:20px;max-width:1100px;margin:auto;}
+    h2{border-bottom:2px solid #c59d5f;padding-bottom:5px;margin-top:20px;}
+    .gallery{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+    .gallery img{width:calc(50% - 10px);border-radius:10px;}
+    .menu-item{display:flex;justify-content:space-between;padding:4px 0;}
+    .price{font-weight:bold;}
+    label{display:block;margin-top:10px;font-weight:600;}
+    select,input{width:100%;padding:8px;margin-top:5px;border:1px solid #ccc;border-radius:6px;}
+    button{width:100%;padding:12px;background:#25D366;color:white;border:none;border-radius:8px;font-size:16px;margin-top:10px;}
+    footer{background:#3b2f2f;color:white;text-align:center;padding:12px;margin-top:25px;}
   </style>
 </head>
-
 <body>
 
 <header>
   <h1>Taverna Eransi</h1>
-  <p>Orari: 07:00 – 23:00</p>
+  <p>Open daily: 07:00 – 23:00</p>
 </header>
 
 <section>
-  <h2>Ambienti</h2>
+  <h2>Ambienti / Gallery</h2>
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" />
-    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330" />
-    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de" />
+    <img src="https://drive.google.com/uc?export=view&id=1HSzvwkVql2CAqxmA2rSxXBv5ubrGqhCS" alt="Ambienti 1">
+    <img src="https://drive.google.com/uc?export=view&id=1bXLY7CCso4tfvysv-r9snLUMdGWHqx86" alt="Ambienti 2">
+    <img src="https://drive.google.com/uc?export=view&id=1QJ8gWv8WN7a32eC7gPSnKwmYMi6PlZY5" alt="Ambienti 3">
+    <img src="https://drive.google.com/uc?export=view&id=1aUscMVNTDl8bB3G2i4TWhL8iwY8d624A" alt="Ambienti 4">
   </div>
 </section>
 
 <section>
-  <h2>Rezervime</h2>
-  <p>Kliko për rezervim në WhatsApp:</p>
-  <a class="btn" href="https://wa.me/355677612555" target="_blank">Rezervo në WhatsApp</a>
+  <h2>Menu / Menu</h2>
+
+  <h3>Peshku / Fish</h3>
+  <div class="menu-item"><span>Koran ne zgare / Grilled Koran (300g)</span><span class="price">1300 Lek</span></div>
+  <div class="menu-item"><span>Belushke ne zgare / Grilled Belushke (300g)</span><span class="price">900 Lek</span></div>
+  <div class="menu-item"><span>Trofte ne zgare / Grilled Trout (500g)</span><span class="price">700 Lek</span></div>
+  <div class="menu-item"><span>Tavë Korani / Koran Casserole (300g)</span><span class="price">1500 Lek</span></div>
+  <div class="menu-item"><span>Tavë Belushke / Belushke Casserole (300g)</span><span class="price">1200 Lek</span></div>
+  <div class="menu-item"><span>Tavë Trofte / Trout Casserole (500g)</span><span class="price">800 Lek</span></div>
+
+  <h3>Supa / Soups</h3>
+  <div class="menu-item"><span>Supe Peshku / Fish Soup</span><span class="price">300 Lek</span></div>
+  <div class="menu-item"><span>Supe Pule / Chicken Soup</span><span class="price">250 Lek</span></div>
+  <div class="menu-item"><span>Supe Perime / Vegetable Soup</span><span class="price">250 Lek</span></div>
+
+  <h3>Pasta</h3>
+  <div class="menu-item"><span>Linguini Fruta Deti / Seafood Linguini</span><span class="price">650 Lek</span></div>
+  <div class="menu-item"><span>Spaghetti Pane & Kërpudha</span><span class="price">—</span></div>
+
+  <h3>Risotto</h3>
+  <div class="menu-item"><span>Risotto Fileto Pule Pane</span><span class="price">—</span></div>
+  <div class="menu-item"><span>Risotto Perime / Vegetable Risotto</span><span class="price">—</span></div>
+  <div class="menu-item"><span>Risotto Fruta Deti / Seafood Risotto</span><span class="price">—</span></div>
+
+  <h3>Mishi / Meat</h3>
+  <div class="menu-item"><span>Mish Qengji ne Furrë (400g)</span><span class="price">1000 Lek</span></div>
+  <div class="menu-item"><span>Brinjë Qengji ne Furrë (350g)</span><span class="price">800 Lek</span></div>
+  <div class="menu-item"><span>Brinjë Viçi ne Furrë (400g)</span><span class="price">1000 Lek</span></div>
+  <div class="menu-item"><span>Brinjë Viçi në Zgarë (350g)</span><span class="price">800 Lek</span></div>
+  <div class="menu-item"><span>Bërxollë Viçi (350g)</span><span class="price">800 Lek</span></div>
+  <div class="menu-item"><span>Biftek Viçi (300g)</span><span class="price">1000 Lek</span></div>
+  <div class="menu-item"><span>Fileto Pule (300g)</span><span class="price">500 Lek</span></div>
+
+  <h3>Tradicionale / Traditional</h3>
+  <div class="menu-item"><span>Pule Fshati e Tiganisur (2 pers)</span><span class="price">1500 Lek</span></div>
+  <div class="menu-item"><span>Pule Fshati e Tiganisur (4 pers)</span><span class="price">3000 Lek</span></div>
+  <div class="menu-item"><span>Pule Fshati me Bukë Misri (2 pers)</span><span class="price">1500 Lek</span></div>
+  <div class="menu-item"><span>Pule Fshati me Bukë Misri (4 pers)</span><span class="price">3000 Lek</span></div>
+  <div class="menu-item"><span>Pule Fshati me Jufka (2 pers)</span><span class="price">1500 Lek</span></div>
+  <div class="menu-item"><span>Pule Fshati me Jufka (4 pers)</span><span class="price">3000 Lek</span></div>
+  <div class="menu-item"><span>Lakror Tradicional Shqiptar</span><span class="price">1000 Lek</span></div>
+</section>
+
+<section>
+  <h2>Rezervime / Reservations</h2>
+  <p>Zgjidh orarin dhe më pas kliko:</p>
+
+  <label for="timeSlot">Orari / Time Slot:</label>
+  <select id="timeSlot">
+    <option value="">Zgjidh orarin</option>
+    <option>07:00</option><option>08:00</option><option>09:00</option>
+    <option>10:00</option><option>11:00</option><option>12:00</option>
+    <option>13:00</option><option>14:00</option><option>15:00</option>
+    <option>16:00</option><option>17:00</option><option>18:00</option>
+    <option>19:00</option><option>20:00</option><option>21:00</option>
+    <option>22:00</option>
+  </select>
+
+  <button onclick="sendWhatsApp()">Rezervo në WhatsApp</button>
+
+  <script>
+    function sendWhatsApp() {
+      const time = document.getElementById("timeSlot").value;
+      if (!time) return alert("Zgjidh një orar!");
+      const message = encodeURIComponent("Përshëndetje, dua të bëj një rezervim në Taverna Eransi për orarin: " + time);
+      window.open("https://wa.me/355677612555?text=" + message, "_blank");
+    }
+  </script>
 </section>
 
 <footer>
-  © Taverna Eransi
+  © 2026 Taverna Eransi
 </footer>
 
 </body>
