@@ -146,13 +146,44 @@
 
 
 <section>
-  <h2>Ambienti / Gallery</h2>
+  <h2>Lokacioni / Location</h2>
+  <p>Na gjeni këtu:</p>
 
-  <div class="gallery">
-    <img src="images/ambient1.jpg" alt="Ambienti 1">
-    <img src="images/ambient2.jpg" alt="Ambienti 2">
-    <img src="images/ambient3.jpg" alt="Ambienti 3">
-    <img src="images/ambient4.jpg" alt="Ambienti 4">
-  </div>
+  <!-- IMAGE MAP (fallback + estetik) -->
+  <a href="https://maps.app.goo.gl/tDCALMXwRn5j6iun8" target="_blank">
+    <img 
+      src="https://maps.googleapis.com/maps/api/staticmap?center=Taverna+Eransi+Pogradec&zoom=16&size=900x350&markers=color:red|Taverna+Eransi+Pogradec&scale=2"
+      alt="Lokacioni Taverna Eransi"
+      style="width:100%;max-width:100%;border-radius:12px;margin-bottom:12px;"
+    >
+  </a>
+
+  <!-- GOOGLE MAPS EMBED -->
+  <iframe
+    src="https://www.google.com/maps?q=Taverna+Eransi+Pogradec&z=16&output=embed"
+    width="100%"
+    height="350"
+    style="border:0;border-radius:12px;"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+
+  <br><br>
+
+  <!-- BUTTON -->
+  <a
+    href="https://maps.app.goo.gl/tDCALMXwRn5j6iun8"
+    target="_blank"
+    style="
+      display:inline-block;
+      padding:12px 18px;
+      background:#c59d5f;
+      color:#fff;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+    ">
+    📍 Hap në Google Maps
+  </a>
 </section>
 
