@@ -326,3 +326,156 @@
   </a>
 </section>
 
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Restoranti Ynë</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+
+    body {
+      background:#111;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    /* HERO */
+    .hero {
+      height:100vh;
+      background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
+      url('https://images.unsplash.com/photo-1555992336-cbf9c35d4e1b') center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1 {
+      font-size:3.5rem;
+      animation: fadeDown 1.5s ease;
+    }
+
+    .hero span {
+      color:#c59d5f;
+    }
+
+    .hero p {
+      margin-top:15px;
+      font-size:1.3rem;
+      opacity:.85;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 30px;
+      background:#c59d5f;
+      color:#000;
+      border-radius:30px;
+      font-weight:bold;
+      text-decoration:none;
+      transition:.3s;
+    }
+
+    .btn:hover {
+      background:#fff;
+      transform:scale(1.05);
+    }
+
+    /* SECTIONS */
+    section {
+      padding:80px 10%;
+    }
+
+    h2 {
+      font-size:2.5rem;
+      margin-bottom:30px;
+      color:#c59d5f;
+    }
+
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card {
+      background:#1a1a1a;
+      padding:30px;
+      border-radius:20px;
+      transition:.4s;
+    }
+
+    .card:hover {
+      transform:translateY(-10px);
+      box-shadow:0 20px 40px rgba(0,0,0,.6);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeDown {
+      from { opacity:0; transform:translateY(-40px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+
+    footer {
+      text-align:center;
+      padding:30px;
+      background:#000;
+      opacity:.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Mirësevini në <span>Restorantin Tonë</span></h1>
+      <p>Shije që nuk harrohen • Ambient që dashurohet</p>
+      <a href="#menu" class="btn">Shiko Menunë</a>
+    </div>
+  </div>
+
+  <!-- WHY US -->
+  <section>
+    <h2>Pse ne?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🍽️ Kuzhinë Premium</h3>
+        <p>Përbërës të freskët dhe receta unike.</p>
+      </div>
+      <div class="card">
+        <h3>🏠 Ambient Luksoz</h3>
+        <p>Qetësi, stil dhe ndriçim perfekt.</p>
+      </div>
+      <div class="card">
+        <h3>⭐ Shërbim i Shkëlqyer</h3>
+        <p>Klienti gjithmonë prioritet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU PREVIEW -->
+  <section id="menu">
+    <h2>Menu Speciale</h2>
+    <div class="cards">
+      <div class="card">🥩 Steak Premium</div>
+      <div class="card">🍝 Pasta Artizanale</div>
+      <div class="card">🍷 Verë Ekskluzive</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Restoranti Ynë • Të gjitha të drejtat e rezervuara
+  </footer>
+
+</body>
+</html>
